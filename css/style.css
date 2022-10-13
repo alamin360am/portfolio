@@ -32,6 +32,30 @@ body {
     background-color: var(--skin-color);
 }
 
+.menu-controller {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--menu-background-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+}
+
+.menu-controller .menu-icon {
+    color: var(--skin-color);
+    font-size: 3rem;
+}
+
 .modeButton {
     position: fixed;
     right: 5rem;
@@ -180,6 +204,7 @@ section {
     padding: 6rem 0;
     background-color: var(--menu-background-color);
     border-right: 2px solid var(--skin-color);
+    transition: all 0.4s ease-in-out;
 }
 
 .menu .logo {

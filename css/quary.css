@@ -167,9 +167,13 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .menu-controller {
+        display: flex;
+    }
+
     .menu {
-        display: none;
-        visibility: hidden;
+        left: -50rem;
+        z-index: 10;
     }
 
     section {
@@ -203,3 +207,5 @@
         right: 1.5rem;
     }
 }
+
+/* For Functionality */
