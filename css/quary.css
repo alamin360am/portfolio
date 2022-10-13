@@ -198,4 +198,8 @@
         display: inline-block;
         margin-bottom: 1rem;
     }
+    .modeButton {
+        top: 1.5rem;
+        right: 1.5rem;
+    }
 }
