@@ -49,6 +49,8 @@ body {
 
     display: none;
 
+    transition: all 0.4 ease-in-out;
+
 }
 
 .menu-controller .menu-icon {
@@ -510,4 +512,14 @@ section {
 form .btn {
     display: inline-block;
     cursor: pointer;
+}
+
+/* For Functionality */
+
+.open {
+    left: 0 !important;
+}
+
+.menu-controller-btn {
+    left: 27rem !important;
 }

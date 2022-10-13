@@ -19,6 +19,19 @@
           navList = nav.querySelectorAll("li"),
           totalNavList = navList.length;
 
+    const menuController = document.querySelector(".menu-controller");
+    const openMenu = document.querySelector(".menu");
+
+    menuController.addEventListener("click", function() {
+        menuController.classList.toggle("menu-controller-btn");
+        openMenu.classList.toggle("open");
+    });
+
+    window.addEventListener("scroll", function() {
+        menuController.classList.remove("menu-controller-btn");
+        openMenu.classList.remove("open");
+    });
+
     for (let i=0; i<totalNavList; i++)
     {
         const a = navList[i].querySelector("a");
@@ -30,5 +43,8 @@
                 console.log(a);
             }
             this.classList.add("active-link");
+
+            menuController.classList.remove("menu-controller-btn");
+            openMenu.classList.remove("open");
         });
     }
