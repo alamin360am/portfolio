@@ -96,6 +96,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .modeButton {
+        top: 1.5rem;
+        right: 3rem;
+    }
+
     .menu {
         width: 20rem;
     }
