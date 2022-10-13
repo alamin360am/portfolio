@@ -32,31 +32,22 @@ body {
     background-color: var(--skin-color);
 }
 
-.menu-controller {
-    position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
-    padding: 0.5rem 0.8rem;
+/* Scrollbar design */
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
     background-color: var(--menu-background-color);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 100;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    display: none;
-
-    transition: all 0.4 ease-in-out;
-
 }
 
-.menu-controller .menu-icon {
-    color: var(--skin-color);
-    font-size: 3rem;
+::-webkit-scrollbar-thumb {
+    background-color: var(--Theme-color);
+    border-radius: 1rem;
 }
+
+/* Theme changer Button */
 
 .modeButton {
     position: fixed;
@@ -85,13 +76,13 @@ body {
     color: #fff;
 }
 
+/* Reusable Componant */
+
 section {
     margin-left: 30rem;
     padding: 4rem;
     background-color: var(--background-color-shade);
 }
-
-/* Reusable Componant */
 
 .height-100 {
     height: 100vh;
@@ -193,6 +184,32 @@ section {
 }
 
 /* Menu */
+
+.menu-controller {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--menu-background-color);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+
+    transition: all 0.4 ease-in-out;
+
+}
+
+.menu-controller .menu-icon {
+    color: var(--skin-color);
+    font-size: 3rem;
+}
 
 .menu {
     position: fixed;
