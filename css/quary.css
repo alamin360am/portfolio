@@ -130,6 +130,10 @@
         font-size: 1.8rem;
     }
 
+    .portfolio-box:hover {
+        transform: scale(1.05);
+    }
+
     .information.grid--2--col {
         grid-template-columns: repeat(1, 1fr);
     }

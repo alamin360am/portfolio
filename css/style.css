@@ -262,6 +262,10 @@ section {
     border-bottom: 0.6rem solid var(--Theme-color);
 }
 
+.menu .nav {
+    margin-bottom: 3rem;
+}
+
 .menu .nav li {
     display: flex;
     align-items: center;
@@ -289,6 +293,26 @@ section {
     font-weight: 700;
     color: var(--skin-color-shade);
     border-bottom: 1px solid var(--skin-color);
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 7rem;
+}
+
+.social-list a {
+    display: block;
+    font-size: 2rem;
+    color: var(--skin-color-shade);
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.social-list a:hover {
+    color: var(--Theme-color);
+    transform: scale(1.2);
 }
 
 /* Home */
@@ -467,9 +491,17 @@ section {
     padding: 0.6rem;
     border-radius: 5px;
     background-color: var(--menu-background-color);
+    cursor: pointer;
 
     display: flex;
     align-items: center;
+
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.1);
 }
 
 .portfolio-box img {
