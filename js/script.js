@@ -14,11 +14,6 @@
     });
 
     // Menu functionality
-
-    const nav = document.querySelector(".nav"),
-          navList = nav.querySelectorAll("li"),
-          totalNavList = navList.length;
-
     const menuController = document.querySelector(".menu-controller");
     const openMenu = document.querySelector(".menu");
 
@@ -31,6 +26,10 @@
         menuController.classList.remove("menu-controller-btn");
         openMenu.classList.remove("open");
     });
+
+    const nav = document.querySelector(".nav"),
+          navList = nav.querySelectorAll("li"),
+          totalNavList = navList.length;
 
     for (let i=0; i<totalNavList; i++)
     {
