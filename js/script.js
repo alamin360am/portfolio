@@ -16,10 +16,12 @@
     // Menu functionality
     const menuController = document.querySelector(".menu-controller");
     const openMenu = document.querySelector(".menu");
+    const menuIcon = document.querySelector(".menu-icon");
 
     menuController.addEventListener("click", function() {
         menuController.classList.toggle("menu-controller-btn");
         openMenu.classList.toggle("open");
+        menuIcon.classList.toggle("fa-xmark");
     });
 
     window.addEventListener("scroll", function() {
